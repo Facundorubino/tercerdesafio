@@ -1,0 +1,191 @@
+/*Tipografia Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Components*/
+@import 'components/navbar';
+@import 'components/footer';
+@import 'components/extends';
+@import 'components/listas';
+@import 'components/mixins';
+
+*{
+	border: 1px solid red;
+}
+
+
+.body{
+font-family: 'Poppins', sans-serif;
+}
+
+.html{
+scroll-behavior: smooth;
+}
+
+/*Propiedades Incio*/
+.inicio{
+	background-image: url("../img/home.jpg");
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.inicio h1{
+	font-size: nth($encabezados, 1);
+	color: nth($colores, 2);
+	margin-top: 20%;
+}
+
+.inicio p{
+	font-size: nth($encabezados, 3);
+	color: nth($colores, 2);
+	margin-top: 10px;
+	font-weight: nth($variables-fuentes, 1);
+}
+
+.btn-warning{
+	@extend %btn;
+}
+
+
+/*Propiedades Nosotros*/
+.nosotros{
+	background-image: url("../img/Sobre.jpg");
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+
+.nosotros h2{
+	font-size: nth($encabezados, 1);
+	color: nth($colores, 2);
+	margin-top: 50%;
+}
+
+.nosotros .italic{
+	font-size: nth($encabezados, 3);
+	color: nth($colores, 2);
+	margin-top: 20px;
+	font-weight: nth($variables-fuentes, 2);
+	font-style: italic;
+}
+
+.nosotros p{
+	font-size: nth($encabezados, 5);
+	color: nth($colores, 2);
+	margin-top: 5%;
+	font-weight: nth($variables-fuentes, 3);
+}
+
+
+/*Propiedades Portfolio*/
+
+.portfolio{
+	background-image: url("../img/Portfolio.jpg");
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+.portfolio h2{
+	font-size: nth($encabezados, 1);
+	color: nth($colores, 2);
+}
+
+.portfolio .card {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+	color: nth($colores, 1);
+}
+.portfolio .card-title{
+	color: nth($colores, 2);
+	font-size: nth($encabezados, 6);
+	font-weight: nth($variables-fuentes, 1);
+}
+
+.card p{
+	color: nth($colores, 2);
+	font-size: nth($encabezados, 3);
+	font-weight: nth($variables-fuentes, 3);
+}
+
+/*Propiedades Clientes*/
+.clientes{
+	background-image: url("../img/clientes.jpg");
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+.clientes .container h2{
+	font-size: nth($encabezados, 1);
+	color: nth($colores, 2);
+}
+
+.clientes .card{
+	border-radius: 4px;
+	color: nth($colores, 1);
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+	border: none;
+}
+
+.clientes .card-text{
+	color: nth($colores, 2);
+	padding: 10px;
+}
+
+.clientes .card img{
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+}
+
+/*Propiedades Contacto*/
+
+.contacto{
+	background-image: url("../img/contacto.jpg");
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+
+.contacto h2{
+	font-size: nth($encabezados, 1);
+	color: nth($colores, 2);
+	margin-top: 10%;
+}
+
+.contacto .text-contacto{
+	color: nth($colores, 2);
+	margin-top: 5%;
+}
+
+.contacto form{
+	margin-left: 10%;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 991px) {
+	.card {
+		margin-bottom: 30px;
+	}
+	.img-area img {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	
+	.nosotros p {
+		padding-top: 50px;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+}
+
+.mixin-main{
+    @include propiedades-main
+}

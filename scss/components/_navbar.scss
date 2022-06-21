@@ -1,0 +1,29 @@
+@import 'components/listas';
+
+/*Propiedades Navbar*/
+.navbar-nav a {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 400;
+	background-color: nth($colores, 1);
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+	color: nth($colores, 2);
+	background-color: nth($colores, 1);
+}
+.navbar-light .navbar-nav .nav-link {
+	color: nth($colores, 2);
+	background-color: nth($colores, 1);
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: nth($colores, 2);
+	background-color: nth($colores, 1);
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background-color: nth($colores, 1);
+}
+

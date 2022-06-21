@@ -1,0 +1,214 @@
+/*Tipografia Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
+/*Propiedades Navbar*/
+.navbar-nav a {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 400;
+	background-color: #fff;
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+	color: #000;
+	background-color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #000;
+	background-color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #000;
+	background-color: #fff;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+
+
+/*Propiedades Incio*/
+.inicio{
+	background-image: url("../img/home.png");
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.inicio h1{
+	font-size: 36px;
+	color: #000;
+	margin-top: 20%;
+}
+
+.inicio p{
+	font-size: 28px;
+	color: #000;
+	margin-top: 10px;
+	font-weight: 200;
+}
+
+.btn-warning{
+	background: #fff;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+	border: none;
+}
+
+
+/*Propiedades Nosotros*/
+.nosotros{
+	background-image: url("../img/Sobre.png");
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+
+.nosotros h1{
+	font-size: 36px;
+	color: #000;
+	margin-top: 30%;
+}
+
+.nosotros .italic{
+	font-size: 14px;
+	color: #000;
+	margin-top: 20px;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.nosotros p{
+	font-size: 16px;
+	color: #000;
+	margin-top: 5%;
+	font-weight: 200;
+}
+
+
+/*Propiedades Portfolio*/
+
+.portfolio{
+	background-image: url("../img/Portfolio.png");
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+.portfolio h1{
+	font-size: 36px;
+	color: #000;
+	margin:50px;
+}
+
+.portfolio .card {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+	background-color: #fff;
+}
+.portfolio .card-title{
+	color: #000;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.card p{
+	color: #000;
+	font-size: 20px;
+	font-weight: 200;
+}
+
+/*Propiedades Clientes*/
+.clientes{
+	background-image: url("../img/clientes.png");
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+.clientes h1{
+	font-size: 36px;
+	color: #000;
+	margin:50px;
+}
+
+.clientes .card{
+	border-radius: 4px;
+	background-color: #fff;
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+	border: none;
+}
+
+.clientes .card-text{
+	color: #000;
+	padding: 10px;
+}
+
+.clientes .card img{
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+}
+
+/*Propiedades Contacto*/
+
+.contacto{
+	background-image: url("../img/contacto.png");
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+.contacto .text-contacto{
+	color: #000;
+	margin-top: 5%;
+}
+
+.contacto form{
+	margin-left: 10%;
+}
+
+
+/*Footer*/
+ .nav .ul .li{
+	background-color: #fff;
+	list-style: none;
+	
+ }
+
+ .nav a {
+	text-decoration: none;
+	color: #000;
+ }
+
+
+
+
+
+/*Responsive*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.card {
+		margin-bottom: 30px;
+	}
+	.img-area img {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	
+	.nosotros p {
+		padding-top: 50px;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+}

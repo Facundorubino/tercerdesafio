@@ -1,0 +1,12 @@
+@import 'components/listas';
+
+.nav .ul .li{
+	background-color: nth($colores, 1);
+	list-style: none;
+	
+ }
+
+ .nav a {
+	text-decoration: none;
+	color: nth($colores, 2);
+ }

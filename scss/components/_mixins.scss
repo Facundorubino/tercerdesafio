@@ -1,0 +1,16 @@
+// Crear el grupo de propiedades a utilizar, pero con valores 
+//que voy a definir en un tiempo cercano 
+
+@mixin propiedades ($valor) {
+    border: $valor;
+    padding: $valor;
+    border-radius: $valor;
+    
+}
+
+@mixin propiedades-main () {
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;	
+    
+}
